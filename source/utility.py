@@ -98,7 +98,7 @@ def normalize(data, logger, scaler_path, fit_standard_scaler = True):
         data = scaler.fit_transform(data)
         data = pd.DataFrame(data = data, columns = scaler.feature_names_in_)
         with open(scaler_path, "wb") as fd:
-            pickle.dump(fd)
+            pickle.dump(scaler, fd)
     else:
         with open(scaler_path, "rb") as fd:
             scaler = pickle.load(fd)
