@@ -36,7 +36,7 @@ def test_string_encoding():
     except:
         assert False
 
-def test_missing_data_imputation()
+def test_missing_data_imputation():
     data = utility.read_file(config["data_directory_path"] + config["train_dataset_name"], logger, sheet_name = 0, usecols = None, concat_sheets = False)
     try:
         utility.missing_data_imputation(data, logger, "Age", method = "median")
