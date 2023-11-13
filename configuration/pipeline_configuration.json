@@ -1,0 +1,19 @@
+{
+    "data_directory_path" : "../data/",
+    "train_dataset_name" : "train.csv",
+    "test_dataset_name" : "test.csv",
+    "type_conversion_mpping" : {
+        "PassengerId" : "int",
+        "Pclass" : "int",
+        "Name" : "str",
+        "Sex" : "str",
+        "Age" : "float",
+        "Sibsp" : "int",
+        "Parch" : "int",
+        "Fare" : "float"
+    },
+    "string_columns" : ["Sex"],
+    "drop_columns" : ["PassengerId", "Name", "Ticket"],
+    "target_column" : "Survived",
+    "scaler_file_name" : "standard_scaler_titanic.pkl"
+}
