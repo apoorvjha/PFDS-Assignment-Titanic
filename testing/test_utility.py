@@ -1,6 +1,6 @@
 import sys
 import os
-sys.path.append("../")
+sys.path.append("../source")
 import utility
 sys.path.pop()
 import json
