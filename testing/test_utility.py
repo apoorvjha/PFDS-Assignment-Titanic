@@ -55,7 +55,7 @@ def test_create_quantile_feature():
 def test_normalize():
     data = utility.read_file(config["data_directory_path"] + config["train_dataset_name"], logger, sheet_name = 0, usecols = None, concat_sheets = False)
     try:
-        utility.normalize(data, logger, scaler_path, fit_standard_scaler = True)
+        utility.normalize(data, logger, config["data_directory_path"] + config["scaler_file_name"], fit_standard_scaler = True)
         assert True
     except:
         assert False
