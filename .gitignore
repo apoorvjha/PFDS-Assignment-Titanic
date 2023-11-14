@@ -9,3 +9,5 @@ virtual_environment
 */.ipynb_checkpoints
 mlruns
 mlartifacts
+notebooks/*.png
+testing/.pytest_cache
