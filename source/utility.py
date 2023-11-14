@@ -29,7 +29,7 @@ def read_file(path, logger, sheet_name = 0, usecols = None, concat_sheets = Fals
         try:
             with open(path, "r") as fd:
                 data = json.load(fd)
-            logger.error(f"The file at path {path} read successfully!")
+            logger.info(f"The file at path {path} read successfully!")
         except Exception as e:
             logger.error(f"The read of file at path {path} failed due to {e}!")
     else:

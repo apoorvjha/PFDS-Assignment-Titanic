@@ -4,3 +4,4 @@ __pycache__
 */logs/*
 logs/*
 virtual_environment
+*/*.pkl
