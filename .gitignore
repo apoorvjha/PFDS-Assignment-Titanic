@@ -5,3 +5,9 @@ __pycache__
 logs/*
 virtual_environment
 */*.pkl
+*/mlruns
+*/.ipynb_checkpoints
+mlruns
+mlartifacts
+notebooks/*.png
+testing/.pytest_cache
